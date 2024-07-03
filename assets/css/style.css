@@ -1,0 +1,59 @@
+body {
+   font-family: "Cabin", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 300;
+   font-style: normal;
+   font-variation-settings:
+      "wdth" 100;
+   margin: 0;
+   padding: 0;
+}
+
+hr {
+   background-color: black;
+   height: .2rem;
+}
+
+.navbar-custom {
+   background-color: #373A3C;
+   color: white !important;
+}
+
+.lobster-letter {
+   font-family: "Lobster", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+/* Media Query */
+@media (max-width: 80rem) {
+   .custom-size-button {
+      font-size: 12px !important;
+      padding: 0;
+      margin: 0;
+   }
+}
+
+@media (max-width: 767.98px) {
+   #carrusel {
+      display: none;
+   }
+}
+
+.carousel {
+   padding: 2rem 0;
+}
+
+.custom-btn1,
+.custom-btn2 {
+   width: 1rem;
+   height: 1rem;
+   border-radius: 1rem;
+   color: #373A3C31;
+   background-color: #373A3C31;
+   border: none;
+}
+
+.active-page {
+   background-color: #373A3C;
+}
