@@ -57,3 +57,8 @@ hr {
 .active-page {
    background-color: #373A3C;
 }
+
+.newsLetter {
+   background-color: #DC3545;
+   color: white !important;
+}

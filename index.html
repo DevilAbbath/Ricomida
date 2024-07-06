@@ -72,11 +72,12 @@
                         <hr class="mt-4 mb-3">
                         <h5 class="card-text text-center text-md-start">110 MIN / 6 A 8 PORCIONES</h5>
                         <div class="d-flex justify-content-between justify-content-md-start gap-4 mt-4">
-                           <button class="btn btn-light custom-size-button" type="button" data-bs-toggle="tooltip"
-                              title="Presiona para enviar a tu correo" data-bs-placement="bottom">Enviar
+                           <button id="enviarCorreoBtn" class="btn btn-light custom-size-button tooltip-desktop"
+                              type="button" data-bs-toggle="tooltip" title="Enviar por Correo"
+                              data-bs-placement="bottom">Enviar
                               por Correo</button>
-                           <button class="btn btn-light custom-size-button" type="button" data-bs-toggle="tooltip"
-                              title="Agrega esta receta a tus favoritos" data-bs-placement="right">Añadir a
+                           <button class="btn btn-light custom-size-button tooltip-desktop" type="button"
+                              data-bs-toggle="tooltip" title="Añadir a favoritos" data-bs-placement="right">Añadir a
                               favoritos</button>
                         </div>
                      </div>
@@ -133,28 +134,157 @@
                      class="custom-btn2" aria-label="Slide 2"></button>
                </div>
             </div>
+
+            <hr class="mb-5">
          </div>
       </section>
 
-      <!-- Columns Recipes -->
+      <!-- Columns Recipe -->
       <section class="row justify-content-center my-3">
          <div class="col-10 col-lg-9">
             <div class="row">
-               <div class="col-12 col-md-6 bg-primary">
-                  <h1>Ingredientes</h1>
+               <div class="col-12 col-md-6">
+                  <h4 id="ingredients" class="recipes">INGREDIENTES
+                     <hr>
+                  </h4>
+                  <h5 class="heading-with-hr mt-4">Masa</h5>
+                  <ul>
+                     <li class="list-group-item">20 gr de levadura seca instantánea</li>
+                     <li class="list-group-item">1 cucharadita de azúcar</li>
+                     <li class="list-group-item">500 ml agua tibia</li>
+                     <li class="list-group-item">100 ml aceite vegetal</li>
+                     <li class="list-group-item">4 cucharadas de aceite de oliva</li>
+                     <li class="list-group-item">65 gr harina de maíz fina (chuchoca)</li>
+                     <li class="list-group-item">2 cucharaditas de sal</li>
+                     <li class="list-group-item">625 gr harina</li>
+                  </ul>
+                  <h5>Salsa</h5>
+                  <ul>
+                     <li class="list-group-item">5 cucharadas de aceite de oliva</li>
+                     <li class="list-group-item">½ cebolla picada en cubos finos</li>
+                     <li class="list-group-item">2 cucharaditas de sal</li>
+                     <li class="list-group-item">3 cucharadas de Orégano Gourmet</li>
+                     <li class="list-group-item">1 ½ cucharadas de Albahaca Gourmet</li>
+                     <li class="list-group-item">2 tarro de tomates en cubos al natural</li>
+                     <li class="list-group-item">2 cucharaditas de azúcar</li>
+                  </ul>
+                  <h5>Relleno</h5>
+                  <ul>
+                     <li class="list-group-item">½ cebolla, en cubos</li>
+                  </ul>
                </div>
-               <div class="col-12 col-md-6 bg-secondary">
-                  <h1>Preparacion</h1>
+               <div class="col-12 col-md-6">
+                  <h4 id="preparation" class="recipes">PREPARACIÓN
+                     <hr>
+                  </h4>
+                  <ol>
+                     <li class="my-3">
+                        Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar
+                        2minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y
+                        agregar el resto de harina, la cantidad necesaria para tener una masa blanda. Poner en el mesón
+                        y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a
+                        medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado,
+                        tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen
+                        (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.
+                     </li>
+                     <li class="mb-3">
+                        Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego
+                        medio.Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla
+                        esté dorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del
+                        tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido
+                        y espesado, como 30 minutos. Sazonar con sal y pimienta a gusto. Reservar.
+                     </li>
+                     <li class="mb-3">
+                        Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los
+                        champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido
+                        que hayan votado los vegetales. Reservar.
+                     </li>
+                     <li class="mb-3">
+                        Calentar el horno a 220C.
+                     </li>
+                     <li class="mb-3">
+                        Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos
+                        moldes(desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre las
+                        dos pizza, tapar con el queso mozarella, luego terminar con la salsa de tomates y finalmente
+                        espolvorear el queso rallado.
+                     </li>
+                     <li class="mb-3">
+                        Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y
+                        dorada. Esperar unos minutos antes de desmoldar.
+                     </li>
+               </div>
+            </div>
+            <hr class="mt-5">
+         </div>
+      </section>
+
+      <!-- Card Section -->
+      <section class="row justify-content-center my-3">
+         <h1 class="title-toggle-chest card-title text-center mb-5">RECETAS RELACIONADAS</h1>
+         <div id="showall" class="my-5 d-none">
+            <butto type="button" class="btn btn-outline-danger w-100">Mostrar Recetas Relacionadas</button>
+         </div>
+         <div class="col-10 col-lg-9">
+            <div class="row">
+               <!-- Card 1 -->
+               <div class="card-toggle-chest1 col-12 col-md-4 my-3">
+                  <div class="card mb-4 h-100 flex-fill">
+                     <img src="./assets/img/recipe-card-1.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
+                        <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est
+                           vulputate nostra, blandit erat luctus faucibus orci.</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="card-toggle-chest1 col-12 col-md-4 my-3">
+                  <div class=" card mb-4 h-100 flex-fill">
+                     <img src="./assets/img/recipe-card-2.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">Tiramisú</h5>
+                        <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus
+                           lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="card-toggle-chest1 col-12 col-md-4 my-3 ">
+                  <div class="card mb-4 h-100 flex-fill">
+                     <img src="./assets/img/recipe-card-3.png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">Plateada</h5>
+                        <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet
+                           ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
       </section>
    </div>
 
+   <!-- NewsLetter -->
+   <section class="row justify-content-center mt-3 newsLetter p-5 p-sm-6 text-center">
+      <div class="col-12">
+         <h1 class="my-4">SUSCRÍBETE EN NUESTRO NEWSLETTER</h1>
+         <h3 class="my-4">y obtén las mejores recetas que tenemos en <span class="lobster-letter">Ricomida</span></h3>
+         <div class="col col-md-2 mx-auto my-5">
+            <button type="button" class="btn btn-outline-light w-100">Empezar</button>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="navbar-custom">
+      <h1 class="text-center lobster-letter">Ricomida</h1>
+   </footer>
+
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
       </script>
+
    <script src="./assets/js/script.js"></script>
 </body>
 
